@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مراقبة حركة المخزون</title>
+  <style>
+  .wrappers {
+    height:1600 px;
+    top: 36%;
+    }
+
+    table {
+    width: 750px;
+    margin: 0 auto; /* Center the table horizontally */
+    border-collapse: collapse;
+    border-radius: 12px;
+  
+  }
+
+  td {
+    padding: 10px;
+    text-align: center;
+  
+  }
+  td:hover {
+    background-color: #678590;
+  }
+
+  a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+ 
+  </style>
+  <link rel="stylesheet" href="stylee.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+
+
+<body>
+  
+
+    <div class="wrapper">
+        <nav class="nav">
+    <div class="nav-menu" id="navMenu">
+        <ul>
+          <li><a href="page1.html" class="link active" >  تخزين البضاعة</li>
+            <li><a href="page2.html" class="link">التوزيع</a></li>
+            <li><a href="page3.html" class="link"> مراقبة حركة المخزون </a></li>
+        </ul>
+    </div>
+    </nav>
+    </div>
+    <div class="wrappers">
+        <form name="f" action="afficher3.php" method="post">
+          <table width="750" align="center" border="0" >
+            <tr>
+              <td >
+                <a href="table1.html" ><b>جدول مخزون المذاقة </b> </a>
+              </td>
+
+            </td>
+            <td>
+              <a href="table2.html" ><b> الوصولات </b> </a>
+            </td>
+              
+
+               <td style=" padding: 10px; background-color: #678590;  ">
+                <a href="table3.html"   style=" text-decoration: none; color: #fff; "><b>  التذاكير</b> </a>
+              </td>
+
+
+          </table>
+          <hr>
+          <div class="two-forms">
+            <div class="input-box">
+                <label>من  :</label>
+                <input type="date" placeholder="DATE" name="start_date">
+        </div>
+        <div class="input-box">
+            <label>الى  :</label>
+            <input type="date" placeholder="DATE" name="end_date">
+    </div>
+          </div>
+
+        <center>
+            <button type="submit" class="btn">عرض</button>
+        </center>
+        </form>
+    </div>
+</body>
+</html>

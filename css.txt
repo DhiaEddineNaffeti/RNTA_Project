@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  /* background: url("images/1.jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* overflow: hidden; */
+  direction: rtl;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0; /* Added to reset default body margin */
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 110vh;
+  /*background: rgba(39, 39, 39, 0.4);*/
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  background: linear-gradient(rgba(39, 39, 39, 0.6), transparent);
+  z-index: 100;
+}
+
+.nav-menu ul {
+  display: flex;
+  padding: 0;
+  list-style-type: none; /* Moved list-style-type to the ul */
+}
+
+.nav-menu ul li {
+  margin: 0 25px;
+}
+
+.nav-menu ul li .link {
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+  padding-bottom: 15px;
+}
+
+.nav-menu ul li .link:hover,
+.nav-menu ul li .active {
+  border-bottom: 2px solid rgb(11, 3, 3);
+}
+
+.wrappers {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  max-height: 100vh; /* Changed height to max-height */
+  overflow-y: auto; /* Added overflow-y to enable scrolling if content is too long */
+  background: transparent;
+  border: 2px solid rgb(8, 7, 7);
+  backdrop-filter: blur(9px);
+  color: black;
+  border-radius: 12px;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.wrappers h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.wrappers .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  text-align: right;
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%; /* Changed to 100% width */
+  height: 70%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(12, 11, 11, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: black;
+  padding: 20px 45px 20px 20px;
+  text-align: right;
+}
+
+.input-box input::placeholder {
+  color: black;
+}
+
+.wrappers .btn {
+  width: 100%; /* Changed to 100% width */
+  height: 45px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+
+.two-forms {
+  display: flex;
+  gap: 10px;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid #333;
+  margin: 20px 0;
+  border-style: inset;
+}
+
+.custom-hr {
+  width: 80%;
+  border: 2px dashed #009688;
+  margin: 15px auto;
+}
+---------------------------------------------------------------------------------------
+ <div class="two-forms">
+              <div class="input-box">
+                  <label>مارس دولي خفيف:</label>
+                  <input type="text" id="zone1" placeholder="الكمية">
+              </div>
+          
+              <div class="input-box">
+                  <label>كريسطال:</label>
+                  <input type="text" id="zone2" placeholder="الكمية">
+              </div>
+          </div>
+          
+          <div class="input-box">
+              <label>مجموع الدخول:</label>
+              <input type="text" id="result" placeholder="" readonly>
+          </div>
+          
+          <script>
+              function calculateSum() {
+                  var zone1Value = parseFloat(document.getElementById('zone1').value) || 0;
+                  var zone2Value = parseFloat(document.getElementById('zone2').value) || 0;
+          
+                  var sum = zone1Value + zone2Value;
+                  document.getElementById('result').value = sum.toFixed(2); // Set the result with two decimal places
+              }
+          
+              document.getElementById('zone1').addEventListener('input', calculateSum);
+              document.getElementById('zone2').addEventListener('input', calculateSum);
+          
+              calculateSum();
+          </script>

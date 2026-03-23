@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  /* background: url("images/1.jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  direction: rtl;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0; 
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 110vh;
+  /*background: rgba(39, 39, 39, 0.4);*/
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  background-color: #536878;
+  /*background: linear-gradient(rgba(39, 39, 39, 0.6), transparent);*/
+  z-index: 100;
+}
+
+.nav-menu ul {
+  display: flex;
+  padding: 0;
+  list-style-type: none; /* Moved list-style-type to the ul */
+}
+
+.nav-menu ul li {
+  margin: 0 25px;
+}
+
+.nav-menu ul li .link {
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+  padding-bottom: 15px;
+}
+
+.nav-menu ul li .link:hover,
+.nav-menu ul li .active {
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.wrappers {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%; 
+  background: transparent;
+  border: 2px solid rgb(8, 7, 7);
+  backdrop-filter: blur(9px);
+  color: black;
+  border-radius: 12px;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /*background: rgba(39, 39, 39, 0.4);*/
+}
+
+.wrappers h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.wrappers .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  text-align: right;
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%; /* Changed to 100% width */
+  height: 70%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(12, 11, 11, 0.396);
+  border-radius: 40px;
+  font-size: 16px;
+  color: black;
+  padding: 20px 45px 20px 20px;
+  text-align: right;
+}
+
+.input-box input::placeholder {
+  color: black;
+}
+
+.input-box textarea {
+  width: 100%;
+  height: 70%; /* Adjust the height based on your design */
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(12, 11, 11, 0.396);
+  border-radius: 40px;
+  font-size: 16px;
+  color: black;
+  padding: 20px 45px 20px 20px;
+  text-align: right;
+  
+}
+
+.input-box textarea::placeholder {
+  color: black;
+}
+
+
+
+
+
+.wrappers .btn {
+  width: 100%; 
+  height: 45px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  cursor: pointer;
+  font-size: 16px;
+  color: #040303;
+  font-weight: 600;
+  
+  
+}
+.two-forms {
+  display: flex;
+  gap: 10px;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid #333;
+  margin: 20px 0;
+  border-style: inset;
+}
+
+.custom-hr {
+  width: 80%;
+  border: 2px dashed #009688;
+  margin: 15px auto;
+}

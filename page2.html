@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>التوزيع</title>
+  <style>
+  .wrappers {
+    height:1600 px;
+    top: 103%;
+    }
+
+    table {
+    width: 750px;
+    margin: 0 auto; /* Center the table horizontally */
+    border-collapse: collapse;
+    border-radius: 12px;
+  
+  }
+
+  td {
+    padding: 10px;
+    text-align: center;
+  
+  }
+  td:hover {
+    background-color: #678590;
+  }
+
+  a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+ 
+  </style>
+  <link rel="stylesheet" href="stylee.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+
+
+<body>
+  
+
+    <div class="wrapper">
+        <nav class="nav">
+    <div class="nav-menu" id="navMenu">
+        <ul>
+          <li><a href="page1.html" class="link active" >  تخزين البضاعة</li>
+            <li><a href="page2.html" class="link">التوزيع</a></li>
+            <li><a href="table1.html" class="link"> مراقبة حركة المخزون </a></li>
+        </ul>
+    </div>
+    </nav>
+    </div>
+    <div class="wrappers">
+        <form  name="f" action="distribution.php" method="post" >
+          <table width="750" align="center" border="0" >
+            <tr>
+              <td>
+                <a href="page2.html" style="display: inline-block; padding: 10px; background-color: #678590; text-decoration: none; color: #fff; "><b>مذاقة المباشرين</b></a>
+
+              </td>
+              <td>
+                <a href="zone1.html" ><b>  مذاقة المتقاعدين </b> </a>
+              </td>
+
+              <td>
+                <a href="zone2.html" ><b>  القباضات المالية </b> </a>
+              </td>
+
+              <td>
+                <a href="zone3.html" ><b> مجلس الادارة </b> </a>
+              </td>
+
+              <td>
+                <a href="zone4.html"><b>  العرضيين </b> </a>
+              </td>
+
+            <td>
+              <a href="zone5.html"><b> متنوع</b> </a>
+            </td>
+            </td>
+
+          </tr>
+
+          </table>
+            <hr>
+            <h2> مذاقة المباشرين:</h2>
+ <!-- -------------------------------مذاقةالمباشرون:------------------------------------- -->
+         <div class="two-forms">
+            <div class="input-box">
+                <labe > المذاقة الشهرية مارس دولي ذهبي :</label>
+              <input type="text" id="zone1" placeholder="" name="methekaL" >
+            </div>
+
+            <div class="input-box">
+            <labe > المذاقة الاسبوعية للكريسطال :</label>
+              <input type="text"  id="zone5" placeholder="" name="methekaC">
+            </div>
+         </div>
+
+<!-- -------------------------------------------------------------------- -->
+            
+            <div class="two-forms">
+            <div class="input-box">
+                <labe > موازنة 1:</label>
+              <input type="text" id="zone2" placeholder=""  name="mowezna1L">
+            </div>
+
+            <div class="input-box">
+                <label>  كرسطال اعوان الحراسة:</label>
+              <input type="text"id="zone6" placeholder="" name="horas" >
+              </div>
+            </div>
+<!-- -------------------------------------------------------------------- -->
+<div class="two-forms">
+  <div class="input-box">
+      <labe > موازنة 2:</label>
+    <input type="text"  id="zone3" placeholder=""  name="mowezna2L">
+  </div>
+
+  <div class="input-box">
+    
+    </div>
+  </div>
+<!-- -------------------------------------------------------------------- -->
+<div class="two-forms">
+
+  <div class="input-box">
+    <labe >  عدد المنتفعين  :</label>
+  <input type="text" placeholder=""  name="nbL" >
+</div>
+
+<div class="input-box">
+  <labe >  عدد المنتفعين:</label>
+<input type="text"  placeholder="" name="nbC" >
+</div>
+</div>
+
+<hr>
+<h2> التذكير :</h2>
+<!-- -------------------------------------------------------------------- -->
+<div class="two-forms">
+
+  <div class="input-box">
+    <labe >  الاسم  :</label>
+  <input type="text" placeholder="" name="nomL">
+</div>
+
+<div class="input-box">
+  <labe >  الاسم :</label>
+<input type="text"  placeholder=""  name="nomC" >
+</div>
+</div>
+<!-- -------------------------------------------------------------------- -->
+<div class="two-forms">
+
+  <div class="input-box">
+    <labe >  الرقم الالي  :</label>
+  <input type="text" placeholder=""  name="matriculeL">
+</div>
+
+<div class="input-box">
+  <labe > الرقم الالي :</label>
+<input type="text"  placeholder="" name="matriculeC">
+</div>
+</div>
+<!-- -------------------------------------------------------------------- -->
+
+        <div class="two-forms">
+
+            <div class="input-box">
+              <labe > الكمية:</label>
+            <input type="text" id="zone4" placeholder="" name="quentiteL" >
+          </div>
+
+          <div class="input-box">
+            <labe > الكمية:</label>
+          <input type="text" id="zone8" placeholder="" name="quentiteC" >
+        </div>
+        </div>
+  
+   <!-- -------------------------------------------------------------------- -->
+   
+    <div class="two-forms">
+      <div class="input-box">
+          <label>المجموع العام مارس دولي ذهبي :</label>
+          <input type="text" id="result1" placeholder="" readonly  name="totalL">
+      </div>
+
+      <div class="input-box">
+          <label>المجموع العام للكريسطال :</label>
+          <input type="text"  id="result2" placeholder="" readonly name="totalC">
+      </div>
+  </div>
+
+  <hr>
+  <center>             
+    <button type="submit" class="btn" >توزيع</button>
+  </center> 
+    <!-- -------------------------------------------------------------------- -->
+    <script>
+      function calculateSum() {
+          var zone1Value = parseFloat(document.getElementById('zone1').value) || 0;
+          var zone2Value = parseFloat(document.getElementById('zone2').value) || 0;
+          var zone3Value = parseFloat(document.getElementById('zone3').value) || 0;
+     
+
+          var sum1 = zone1Value + zone3Value +zone2Value;
+
+          document.getElementById('result1').value = sum1.toFixed(2); 
+
+      }
+  
+      document.getElementById('zone1').addEventListener('input', calculateSum);
+      document.getElementById('zone2').addEventListener('input', calculateSum);
+      document.getElementById('zone3').addEventListener('input', calculateSum);
+      
+  
+      calculateSum();
+  </script>
+    <!-- -------------------------------------------------------------------- -->
+    <script>
+      function calculateSum() {
+          var zone1Value = parseFloat(document.getElementById('zone5').value) || 0;
+          var zone2Value = parseFloat(document.getElementById('zone6').value) || 0;
+         
+
+          var sum1 = zone1Value + zone2Value;
+
+          document.getElementById('result2').value = sum1.toFixed(2); 
+
+      }
+  
+      document.getElementById('zone5').addEventListener('input', calculateSum);
+      document.getElementById('zone6').addEventListener('input', calculateSum);
+      
+  
+      calculateSum();
+  </script>
+  
+
+
+  <!-- ---------------------مذاقة المتقاعدون----------------------------------------------- -->
+
+        </form>
+    </body>
+    <footer>
+      <p>Dhia Eddine Naffeti</p>
+    </footer>
+</html>
